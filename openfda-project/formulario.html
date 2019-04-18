@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+ <html lang="es" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <meta name = 'author' content = 'Aitor Chamizo'>
+     <meta name = 'description' content = 'Búsqueda y listado de medicamentos y empresas en OpenFDA'>
+     <title>Formulario para obtener medicamentos del API de OpenFDA</title>
+     <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/703722838486851588/ZpuXjIAr.jpg" />
+   </head>
+   <body style = 'background-color:rgb(129, 154, 132);'>
+     <h1 style = 'color:LightGray'>Bienvenido al buscador de OpenFDA</h1>
+     <h2 style = 'color:LightGray'> El objetivo de esta aplicación es encontrar medicamentos y empresas dentro de la base de datos de OpenFDA </h2>
+     <h3 style = 'color:LightGray'> Si desea una lista de medicamentos/empresas/advertencias, puede escribir en el buscador un límite numérico (20, por ejemplo) y obtendrá una lista de 20 medicamentos/empresas.</h3>
+     <h3 style = 'color:LightGray'> Si desea un medicamento/empresa específica, puede escribir en el buscador directamente su nombre concreto.</h3>
+   <br>
+   <br>
+   <br>
+   <fieldset>
+     <body style = 'background-color:rgb(129, 154, 132);'
+      <h1 style = 'border:2px solid LightGray;'> Lista de Medicamentos</h1>
+
+   <br>
+     <form method = 'get' action = 'listDrugs'>
+       <input type = 'submit' value = 'Lista de medicamentos por defecto.'>
+       <input type = 'text' name = 'limit'>
+       </input>
+     </form>
+
+     <form method='get' action = 'searchDrug'>
+       <input type = 'submit' value = 'Medicamento concreto.'>
+       <input type = 'text' name = 'medicamento'>
+
+       </input>
+     </form>
+     <br>
+     <fieldset>
+       <body style = 'background-color:rgb(129, 154, 132)'
+        <h1 style ='border:2px solid LightGray'> Lista de empresas. </h1>
+
+
+     <br>
+      <form method = 'get' action = 'listCompanies'>
+         <input type = 'submit' value = 'Lista de empresas'>
+         <input name = 'limit' type = 'text'>
+         </input>
+     </form>
+
+       <form method = 'get' action = 'searchCompany'>
+         <input type = 'submit' value = 'Empresa concreta'>
+         <input type = 'text' name = 'empresa'>
+
+
+           </input>
+       </form>
+       <br>
+       <fieldset>
+         <body style = 'background-color:rgb(129, 154, 132)'
+          <h3 style = 'border:2px solid LightGray'>Lista de advertencias. </h3>
+          <form method = 'get' action = 'listWarnings'>
+           <input type = 'submit' value = 'Lista de advertencias. '>
+           <input type ='text' name='limit'>
+           </input>
+
+
+       </form>
+    </fieldset>
+
+
+       </body>
+       </html>
+
+   </body>
+ </html>
